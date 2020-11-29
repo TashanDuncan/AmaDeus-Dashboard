@@ -19,7 +19,6 @@ nav {
 
 main {
     grid-area: main;
-    display: grid;
 }
 
 .main-header {
@@ -69,6 +68,7 @@ main {
     }
 
     main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "main-header main-header"
