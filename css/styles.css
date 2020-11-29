@@ -8,6 +8,11 @@
         "main";
 }
 
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+    }
+    
+
 /***************GRID AREAS************/
 header {
     grid-area: header;
@@ -77,6 +82,14 @@ main {
         "social social"
         "members activity"
         "message settings";
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
     }
 
 
