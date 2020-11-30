@@ -6,17 +6,25 @@
     <title>AmaDeus - WebApp Dashboard</title>
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
 </head>
 <body class="grid-container">
     <header>
-        <h1>Ama<span>Deus&trade;</span></h1>
-        <div>
-            <img src="./icons/icon-bell.svg" alt="notification Bell" height="50" width="50">
-            <div id="notifications"></div>
+        <div class="logo">
+            <h1><span>Ama</span>Deus&trade;</h1>
         </div>
-        <img src="./images/0.jpg" alt="profile image" height="50" width="50">
-        <h3>Tashan Duncan</h3>
+        <div class="user">
+            <div class="notification-bell">
+                <img src="./icons/icon-bell.svg" alt="notification Bell">
+                <div id="notifications"></div>
+            </div>
+            <div class="name">
+                <img src="./images/0.jpg" alt="profile image" class="profile-image">
+                <h3>Tashan Duncan</h3>
+            </div>
+        </div>
     </header>
     <nav>
         <!--Dashboard SVG-->
@@ -78,7 +86,7 @@
         </div>
         </section>
 
-
+<!-- 
         <section class="social">
             <div class="social-header">
                 <h3>Traffic</h3>
@@ -111,7 +119,7 @@
                 </div>
             </div>
         </section>
-        
+         -->
             
         <!-- new members widget -->
         <section class="members">

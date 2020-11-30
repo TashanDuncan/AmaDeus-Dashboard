@@ -350,45 +350,16 @@ template {
 /*              Base styles                      */
 /* ============================================= */
 * {
-  font-family: "Lato", sans-serif;
-  color: #777;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  font-weight: normal;
 }
 
-p {
-  line-height: 1.45em;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
-.headline-primary {
-  color: #58e1c1;
-  margin-left: 10px;
-}
-
-.headline-secondary {
-  font-weight: 300;
-  color: #777;
-}
-
-.link {
-  color: #51ddfc;
-  font-weight: 700;
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid #58e1c1;
-  border-radius: 5px;
+.widget-container-full, .widget-container-half {
+  width: 95vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ============================================= */
@@ -412,34 +383,16 @@ a {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .nav-link:hover {
-  color: #fff;
-  background-color: #99edd9;
+  color: #FFF;
+  background-color: #a8aad7;
 }
 
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-.img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  max-height: 100%;
-}
-.img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 13px;
-  border: 1px solid #ccc;
-}
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.profile-image {
+  border-radius: 50%;
+  height: 50px;
 }
 
 /* ============================================= */
@@ -455,9 +408,6 @@ a {
 /***************GRID AREAS************/
 header {
   grid-area: header;
-  display: flex;
-  padding: 10px;
-  background-color: #7477bf;
 }
 
 nav {
@@ -502,6 +452,46 @@ main {
 
 .settings {
   grid-area: settings;
+}
+
+/* ============================================= */
+/* Header Styles */
+/* ============================================= */
+header {
+  width: 100vw;
+  color: #FFF;
+  background-color: #7477BF;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header span {
+  font-weight: bold;
+}
+header .logo {
+  margin-right: auto;
+  margin-left: 20px;
+  display: inline-block;
+}
+header .user, header .name {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .notification-bell img {
+  height: 30px;
+  padding-right: 20px;
+}
+header .name {
+  padding-left: 20px;
+  border-left: 1px solid black;
+}
+header .notification-bell, header img, header h3 {
+  display: inline-block;
 }
 
 /* ============================================= */
