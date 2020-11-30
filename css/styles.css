@@ -492,6 +492,23 @@ header .notification-bell, header img, header h3 {
   display: inline-block;
 }
 
+.main-header {
+  display: flex;
+  align-items: center;
+  background-color: #FBFBFB;
+  justify-content: space-between;
+}
+.main-header .headline {
+  background-color: #FFF;
+  padding: 20px;
+  margin: 0;
+  border-right: #a0a0a0 1px solid;
+}
+.main-header-search {
+  margin-right: 20px;
+  height: 100%;
+}
+
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
