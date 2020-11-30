@@ -11,7 +11,7 @@ padding: 10px 0;
   svg{
     height: 30px;
     fill: $default-color;
-    transition: fill ease-in .5s;
+    transition: fill ease-in .3s;
 
     &:hover{
       fill: lighten($default-color, 30%)

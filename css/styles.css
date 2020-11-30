@@ -377,7 +377,7 @@ nav {
 nav svg {
   height: 30px;
   fill: #a0a0a0;
-  transition: fill ease-in 0.5s;
+  transition: fill ease-in 0.3s;
 }
 nav svg:hover {
   fill: #ededed;
@@ -512,6 +512,17 @@ header .notification-bell, header img, header h3 {
   }
   .widget-container-half {
     width: 45vw;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+  nav svg {
+    margin: 20px;
   }
 }
 
