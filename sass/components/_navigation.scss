@@ -2,27 +2,22 @@
 /*              Navigation                       */
 /* ============================================= */
 
-.nav {
-    padding-left: 0;
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
+nav {
+background-color: $nav-bg;
+display: flex;
+justify-content: space-around;
+padding: 10px 0;
 
-    &-link {
-      text-align: center;
-      border-radius: 5px;
-      padding: 10px 0;
-      display: block;
-      width: 100%;
-      transition: 
-        background-color .2s ease-in-out, 
-        color .2s ease-in-out;
-    }
-    
-    &-link:hover {
-      color: $white;
-      background-color: lighten($primary-color, 15%);
-    }
+  svg{
+    height: 30px;
+    fill: $default-color;
+    transition: fill ease-in .5s;
 
+    &:hover{
+      fill: lighten($default-color, 30%)
+    }
   }
+
+
+}
   
