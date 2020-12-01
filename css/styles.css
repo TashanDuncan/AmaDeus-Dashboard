@@ -353,6 +353,7 @@ template {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-weight: normal;
+  list-style-type: none;
 }
 
 .widget-container-full, .widget-container-half {
@@ -507,6 +508,22 @@ header .notification-bell, header img, header h3 {
 .main-header-search {
   margin-right: 20px;
   height: 100%;
+}
+
+/* ============================================= */
+/* Traffic / Graph Styles */
+/* ============================================= */
+.traffic-header {
+  display: flex;
+  justify-content: space-between;
+}
+.traffic-header .traffic-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+.traffic-header .traffic-nav li {
+  margin-right: 10px;
 }
 
 /* ============================================= */

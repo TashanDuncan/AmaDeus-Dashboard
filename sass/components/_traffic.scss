@@ -1,0 +1,17 @@
+ /* ============================================= */
+ /* Traffic / Graph Styles */
+ /* ============================================= */
+
+ .traffic-header{
+    display: flex;
+    justify-content: space-between;
+
+    .traffic-nav{
+        display: flex;
+        justify-content: space-around;
+        margin-right: 20px;
+        li{
+            margin-right: 10px;
+        }
+    }
+ }
