@@ -516,14 +516,14 @@ header .notification-bell, header img, header h3 {
 .traffic-header {
   display: flex;
   justify-content: space-between;
+  margin: 0 10px;
 }
 .traffic-header .traffic-nav {
   display: flex;
   justify-content: space-around;
-  margin-right: 20px;
 }
 .traffic-header .traffic-nav li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* ============================================= */
@@ -557,6 +557,10 @@ header .notification-bell, header img, header h3 {
   }
   nav svg {
     margin: 20px;
+  }
+
+  .traffic-header {
+    margin: 0 20px;
   }
 }
 
