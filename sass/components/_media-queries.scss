@@ -47,4 +47,10 @@
   .traffic-header{
     margin: 0 20px;
   }
+
+  .daily, .mobile{
+    border-top: 1px $default-color solid;
+    border-bottom: 1px $default-color solid;;
+    border-left: 1px $default-color solid;
+ }
 }

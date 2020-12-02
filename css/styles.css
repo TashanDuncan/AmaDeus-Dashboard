@@ -363,6 +363,10 @@ template {
   margin-right: auto;
 }
 
+section {
+  padding-left: 20px;
+}
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
@@ -561,6 +565,12 @@ header .notification-bell, header img, header h3 {
 
   .traffic-header {
     margin: 0 20px;
+  }
+
+  .daily, .mobile {
+    border-top: 1px #a0a0a0 solid;
+    border-bottom: 1px #a0a0a0 solid;
+    border-left: 1px #a0a0a0 solid;
   }
 }
 
