@@ -533,6 +533,10 @@ header .notification-bell, header img, header h3 {
 /* ============================================= */
 /*              Social styles                    */
 /* ============================================= */
+.social {
+  border-bottom: 1px #a0a0a0 solid;
+  padding-bottom: 50px;
+}
 .social-content {
   display: flex;
   justify-content: space-around;
@@ -544,6 +548,7 @@ header .notification-bell, header img, header h3 {
   padding: 20px 100px 0px 20px;
   margin: 10px;
   border: 1px #a0a0a0 solid;
+  min-width: 20%;
 }
 .social-image {
   display: flex;
@@ -571,6 +576,7 @@ header .notification-bell, header img, header h3 {
   margin-top: 2px;
   font-size: 2rem;
   font-weight: lighter;
+  color: #a0a0a0;
 }
 
 /* ============================================= */
