@@ -364,7 +364,7 @@ template {
 }
 
 section {
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 /* ============================================= */
@@ -582,12 +582,6 @@ header .notification-bell, header img, header h3 {
 /* ============================================= */
 /*         member and activity compenents   */
 /* ============================================= */
-.members-all {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
 .members-container {
   display: flex;
   border-bottom: 1px #a0a0a0 solid;
@@ -652,6 +646,10 @@ header .notification-bell, header img, header h3 {
 
   .social-container {
     margin: 30px;
+  }
+
+  .members-all {
+    width: 95%;
   }
 }
 
