@@ -580,6 +580,34 @@ header .notification-bell, header img, header h3 {
 }
 
 /* ============================================= */
+/*         member and activity compenents   */
+/* ============================================= */
+.members-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.members-container {
+  display: flex;
+  border-bottom: 1px #a0a0a0 solid;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.members-text {
+  flex-grow: 1;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+.members-date {
+  text-align: center;
+  padding: 10px 0;
+}
+.members p {
+  margin: 0;
+}
+
+/* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {

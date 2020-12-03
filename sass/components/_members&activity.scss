@@ -1,0 +1,35 @@
+/* ============================================= */
+/*         member and activity compenents   */
+/* ============================================= */
+
+.members{
+    &-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    
+    }
+
+    &-container{
+        display: flex;
+        border-bottom: 1px $default-color solid;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    &-text{
+        flex-grow: 1;
+        padding: 10px 0;
+        margin-left: 10px;
+    }
+
+    &-date{
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    p{
+        margin: 0;
+    }
+}
