@@ -1,0 +1,41 @@
+/* ============================================= */
+/*         message and settings components  */
+/* ============================================= */
+
+.message{
+    padding-bottom: 20px;
+    .widget{
+       
+        &-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            input{
+                padding: 10px 10px;
+            }
+            
+            textarea{
+                padding: 10px 10px 50px 10px;
+            }
+
+
+            input, textarea{
+                background-color: $secondary-color;  
+                border: 1px $default-color solid;
+                margin-bottom: 20px;
+
+            }
+            ::placeholder{
+                color: $default-color;
+            }
+
+            button{
+                @include button;
+            }
+        }
+
+
+
+    }
+}
