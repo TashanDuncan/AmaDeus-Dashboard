@@ -2,14 +2,23 @@
 /*         member and activity compenents   */
 /* ============================================= */
 
-.members{
+.members, .activity{
 
+    border-bottom: 1px $default-color solid;
+    border-left: 1px $default-color solid;
+    padding-bottom: 20px;
 
     &-container{
+
+
+
         display: flex;
         border-bottom: 1px $default-color solid;
         padding-bottom: 20px;
         margin-top: 20px;
+        height: 100px;
+
+
     }
 
     &-text{
@@ -24,6 +33,16 @@
     }
 
     p{
-        margin: 0;
+        margin: 5px 0px;
+    }
+
+    .arrow{
+        color: $primary-color;
+        font-size: 3rem;
+        
+    }
+
+    :last-child{
+        border-bottom: none;
     }
 }

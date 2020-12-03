@@ -582,23 +582,36 @@ header .notification-bell, header img, header h3 {
 /* ============================================= */
 /*         member and activity compenents   */
 /* ============================================= */
-.members-container {
+.members, .activity {
+  border-bottom: 1px #a0a0a0 solid;
+  border-left: 1px #a0a0a0 solid;
+  padding-bottom: 20px;
+}
+.members-container, .activity-container {
   display: flex;
   border-bottom: 1px #a0a0a0 solid;
   padding-bottom: 20px;
   margin-top: 20px;
+  height: 100px;
 }
-.members-text {
+.members-text, .activity-text {
   flex-grow: 1;
   padding: 10px 0;
   margin-left: 10px;
 }
-.members-date {
+.members-date, .activity-date {
   text-align: center;
   padding: 10px 0;
 }
-.members p {
-  margin: 0;
+.members p, .activity p {
+  margin: 5px 0px;
+}
+.members .arrow, .activity .arrow {
+  color: #7477BF;
+  font-size: 3rem;
+}
+.members :last-child, .activity :last-child {
+  border-bottom: none;
 }
 
 /* ============================================= */
