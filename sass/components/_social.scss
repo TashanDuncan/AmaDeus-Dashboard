@@ -2,3 +2,22 @@
 /*              Social styles                    */
 /* ============================================= */
 
+.social{
+    .social-image{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: $primary-color;
+
+        svg{
+            display: block;
+            margin:  0 auto;
+            height: 70px;
+            fill: white;
+            
+        }
+    }
+    
+}
