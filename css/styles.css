@@ -533,7 +533,19 @@ header .notification-bell, header img, header h3 {
 /* ============================================= */
 /*              Social styles                    */
 /* ============================================= */
-.social .social-image {
+.social-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.social-container {
+  display: flex;
+  background-color: #FBFBFB;
+  padding: 20px 100px 0px 20px;
+  margin: 10px;
+  border: 1px #a0a0a0 solid;
+}
+.social-image {
   display: flex;
   align-items: center;
   height: 100px;
@@ -541,11 +553,24 @@ header .notification-bell, header img, header h3 {
   border-radius: 50%;
   background-color: #7477BF;
 }
-.social .social-image svg {
+.social-image svg {
   display: block;
   margin: 0 auto;
   height: 70px;
-  fill: white;
+}
+.social-text {
+  margin-left: 20px;
+}
+.social-name {
+  color: #7477BF;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 0px;
+}
+.social-number {
+  margin-top: 2px;
+  font-size: 2rem;
+  font-weight: lighter;
 }
 
 /* ============================================= */
@@ -589,6 +614,10 @@ header .notification-bell, header img, header h3 {
     border-top: 1px #a0a0a0 solid;
     border-bottom: 1px #a0a0a0 solid;
     border-left: 1px #a0a0a0 solid;
+  }
+
+  .social-container {
+    margin: 30px;
   }
 }
 
