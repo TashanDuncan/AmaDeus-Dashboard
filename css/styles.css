@@ -609,6 +609,7 @@ header .notification-bell, header img, header h3 {
 .members .arrow, .activity .arrow {
   color: #7477BF;
   font-size: 3rem;
+  margin-left: 5px;
 }
 .members :last-child, .activity :last-child {
   border-bottom: none;
