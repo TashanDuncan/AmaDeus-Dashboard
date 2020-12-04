@@ -30,12 +30,21 @@
                 color: $default-color;
             }
 
-            button{
-                @include button;
-            }
+
         }
 
 
 
     }
 }
+
+.button{
+    &-primary, &-disabled{
+        @include button;
+    }
+
+    &-disabled{
+        background-color: $default-color;
+    }
+}
+

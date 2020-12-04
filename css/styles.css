@@ -459,7 +459,6 @@ main {
 /* Header Styles */
 /* ============================================= */
 header {
-  width: 100%;
   color: #FFF;
   background-color: #7477BF;
   font-weight: normal;
@@ -640,13 +639,17 @@ header .notification-bell, header img, header h3 {
 .message .widget-container ::placeholder {
   color: #a0a0a0;
 }
-.message .widget-container button {
+
+.button-primary, .button-disabled {
   background-color: #7477BF;
   color: #FFF;
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-weight: bold;
+}
+.button-disabled {
+  background-color: #a0a0a0;
 }
 
 /* ============================================= */
