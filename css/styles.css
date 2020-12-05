@@ -660,7 +660,7 @@ header .notification-bell, header img, header h3 {
   border: 1px #a0a0a0 solid;
   margin-bottom: 20px;
 }
-.message .widget-container ::placeholder, .message .widget-container option, .settings .widget-container ::placeholder, .settings .widget-container option {
+.message .widget-container ::placeholder, .settings .widget-container ::placeholder {
   color: #a0a0a0;
 }
 .message .widget-toggle, .settings .widget-toggle {
