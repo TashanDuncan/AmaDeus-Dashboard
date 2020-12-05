@@ -455,6 +455,10 @@ main {
   grid-area: settings;
 }
 
+.alert {
+  grid-area: alert;
+}
+
 /* ============================================= */
 /* Header Styles */
 /* ============================================= */
@@ -511,6 +515,23 @@ header .notification-bell, header img, header h3 {
 .main-header-search {
   margin-right: 20px;
   height: 100%;
+}
+
+.alert {
+  background-color: #7477BF;
+  color: #FFF;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.alert-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.alert-banner-close {
+  font-size: larger;
+  font-weight: bolder;
 }
 
 /* ============================================= */
@@ -751,7 +772,7 @@ input:checked + .slider:before {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "main-header main-header" "traffic traffic" "daily mobile" "social social" "members activity" "message settings";
+    grid-template-areas: "main-header main-header" "alert alert" "traffic traffic" "daily mobile" "social social" "members activity" "message settings";
   }
 
   .widget-container-full {

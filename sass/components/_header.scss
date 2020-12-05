@@ -66,4 +66,23 @@ header {
        margin-right: 20px;
        height: 100%;
     }
-  }
+}
+
+.alert {
+    background-color: $primary-color;
+    color: $white;
+    margin: 0 10px;
+    border-radius: 5px;
+    
+    &-banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px;
+
+        &-close{
+            font-size: larger;
+            font-weight: bolder;
+        }
+    }
+}
