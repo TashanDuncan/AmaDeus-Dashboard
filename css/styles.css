@@ -367,6 +367,10 @@ section {
   padding: 0 20px;
 }
 
+.show {
+  display: block;
+}
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
@@ -459,6 +463,10 @@ main {
   grid-area: alert;
 }
 
+.tasks {
+  grid-area: tasks;
+}
+
 /* ============================================= */
 /* Header Styles */
 /* ============================================= */
@@ -541,6 +549,27 @@ header .notification-bell, header img, header h3 {
   font-size: larger;
   font-weight: bolder;
   padding: 10px;
+}
+.alert-tasks {
+  position: absolute;
+  background-color: #FBFBFB;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.alert-tasks-close {
+  padding: 5px 20px;
+  color: red;
+  text-align: right;
+  font-weight: bolder;
+}
+.alert-tasks a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.alert-tasks a :hover {
+  background-color: #a0a0a0;
 }
 
 /* ============================================= */
@@ -835,6 +864,9 @@ input:checked + .slider:before {
 
   .alert-banner {
     margin: 0 30px;
+  }
+  .alert-tasks {
+    top: 200px;
   }
 }
 
