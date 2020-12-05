@@ -73,6 +73,10 @@ header {
     color: $white;
     margin: 0 10px;
     border-radius: 5px;
+
+    p{
+        margin: 0;
+    }
     
     &-banner{
         display: flex;
@@ -83,6 +87,7 @@ header {
         &-close{
             font-size: larger;
             font-weight: bolder;
+            padding: 10px;
         }
     }
 }

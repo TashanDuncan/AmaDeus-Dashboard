@@ -523,6 +523,9 @@ header .notification-bell, header img, header h3 {
   margin: 0 10px;
   border-radius: 5px;
 }
+.alert p {
+  margin: 0;
+}
 .alert-banner {
   display: flex;
   justify-content: space-between;
@@ -532,6 +535,7 @@ header .notification-bell, header img, header h3 {
 .alert-banner-close {
   font-size: larger;
   font-weight: bolder;
+  padding: 10px;
 }
 
 /* ============================================= */
@@ -814,6 +818,10 @@ input:checked + .slider:before {
   .settings {
     border-left: 1px #a0a0a0 solid;
     border-top: none;
+  }
+
+  .alert-banner {
+    margin: 0 30px;
   }
 }
 
