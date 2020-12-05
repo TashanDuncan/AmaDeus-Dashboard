@@ -617,27 +617,34 @@ header .notification-bell, header img, header h3 {
 /* ============================================= */
 /*         message and settings components  */
 /* ============================================= */
-.message {
+.message, .settings {
   padding-bottom: 20px;
 }
-.message .widget-container {
+.message .widget-container, .settings .widget-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
-.message .widget-container input {
+.message .widget-container input, .message .widget-container select, .settings .widget-container input, .settings .widget-container select {
   padding: 10px 10px;
 }
-.message .widget-container textarea {
+.message .widget-container textarea, .settings .widget-container textarea {
   padding: 10px 10px 50px 10px;
 }
-.message .widget-container input, .message .widget-container textarea {
+.message .widget-container input, .message .widget-container textarea, .message .widget-container select, .settings .widget-container input, .settings .widget-container textarea, .settings .widget-container select {
   background-color: #FBFBFB;
   border: 1px #a0a0a0 solid;
   margin-bottom: 20px;
 }
-.message .widget-container ::placeholder {
+.message .widget-container ::placeholder, .message .widget-container option, .settings .widget-container ::placeholder, .settings .widget-container option {
   color: #a0a0a0;
+}
+.message .widget-toggle, .settings .widget-toggle {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.message .widget-toggle p, .settings .widget-toggle p {
+  flex-grow: 1;
 }
 
 .button-primary, .button-disabled {
@@ -650,6 +657,83 @@ header .notification-bell, header img, header h3 {
 }
 .button-disabled {
   background-color: #a0a0a0;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: space-between;
+}
+.settings-button button {
+  flex-grow: 1;
+}
+.settings-button .button-primary {
+  margin-right: 20px;
+}
+
+/* ============================================= */
+/*         Toggle switch component  */
+/* ============================================= */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a0a0a0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #7477BF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7477BF;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(65px);
+  -ms-transform: translateX(65px);
+  transform: translateX(65px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* ============================================= */
@@ -701,6 +785,10 @@ header .notification-bell, header img, header h3 {
 
   .members-all {
     width: 95%;
+  }
+
+  .settings {
+    border-left: 1px #a0a0a0 solid;
   }
 }
 

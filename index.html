@@ -256,17 +256,31 @@
         <section class="settings">
             <h3>Settings</h3>
             <!-- custom CSS toggle code-->
-
-
-            <!-- custom CSS toggle code-->
-            <select class="form-field" id="timezone">
-                <option disabled selected>Select a Timezone</option>
-                <option>Eastern</option>
-                <!-- more options -->
-            </select>
-            <div class="settings-button" >
-                <button class="button-primary" id="save">Save</button>
-                <button class="button-disabled" id="cancel">Cancel</button>
+            <div class="widget-container">
+                <div class="widget-toggle">
+                    <p>Send Email Notifications</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="widget-toggle">
+                    <p>Set Profile to Public</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <!-- custom CSS toggle code-->
+                <select class="form-field" id="timezone">
+                    <option disabled selected>Select a Timezone</option>
+                    <option>Eastern</option>
+                    <!-- more options -->
+                </select>
+                <div class="settings-button" >
+                    <button class="button-primary" id="save">Save</button>
+                    <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
             </div>
         </section>
             

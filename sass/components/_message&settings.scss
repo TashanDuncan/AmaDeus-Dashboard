@@ -2,16 +2,16 @@
 /*         message and settings components  */
 /* ============================================= */
 
-.message{
+.message, .settings{
     padding-bottom: 20px;
     .widget{
        
         &-container{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+
             
-            input{
+            input, select{
                 padding: 10px 10px;
             }
             
@@ -20,17 +20,26 @@
             }
 
 
-            input, textarea{
+            input, textarea, select{
                 background-color: $secondary-color;  
                 border: 1px $default-color solid;
                 margin-bottom: 20px;
-
             }
-            ::placeholder{
+            ::placeholder, option{
                 color: $default-color;
             }
 
 
+        }
+
+        &-toggle{
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+
+            p{
+               flex-grow: 1;
+            }
         }
 
 
@@ -45,6 +54,21 @@
 
     &-disabled{
         background-color: $default-color;
+    }
+}
+
+.settings{
+
+
+    &-button{
+        display: flex;
+        justify-content: space-between;
+        button{
+            flex-grow: 1;
+        }
+        .button-primary{
+            margin-right: 20px;
+        }
     }
 }
 
