@@ -486,10 +486,15 @@ header .user, header .name {
   align-items: center;
   justify-content: space-between;
 }
-header .notification-bell img {
+header .notification-bell svg {
   height: 30px;
   padding-right: 20px;
   padding-left: 20px;
+  fill: #FFF;
+  transition: fill ease-in 0.3s;
+}
+header .notification-bell svg:hover {
+  fill: #a0a0a0;
 }
 header .name {
   padding-left: 20px;
