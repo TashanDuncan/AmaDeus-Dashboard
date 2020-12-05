@@ -659,6 +659,9 @@ header .notification-bell, header img, header h3 {
   background-color: #a0a0a0;
 }
 
+.settings {
+  border-top: solid 1px #a0a0a0;
+}
 .settings-button {
   display: flex;
   justify-content: space-between;
@@ -789,6 +792,7 @@ input:checked + .slider:before {
 
   .settings {
     border-left: 1px #a0a0a0 solid;
+    border-top: none;
   }
 }
 
