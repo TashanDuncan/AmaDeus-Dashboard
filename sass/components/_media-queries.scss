@@ -72,7 +72,19 @@
 
     border-left: 1px $default-color solid;
     border-top: none;
+    
+    .widget{
+
+      &-toggle{
+        P{
+         flex-grow: 0;
+         width: 30%;
+        }
+      }
+    }
   }
+
+  
 
   .alert {
 
