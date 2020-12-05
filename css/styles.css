@@ -820,6 +820,9 @@ input:checked + .slider:before {
     border-left: 1px #a0a0a0 solid;
     border-top: none;
   }
+  .settings .widget-container :last-child {
+    margin-bottom: 0px;
+  }
   .settings .widget-toggle P {
     flex-grow: 0;
     width: 30%;
