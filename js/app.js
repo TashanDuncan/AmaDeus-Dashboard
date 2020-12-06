@@ -36,7 +36,9 @@ closeTasks.addEventListener('click', e => {
     parent.style.display = "none";
 })
 
-send.addEventListener('click', () => {
+send.addEventListener('click', (e) => {
+    e.preventDefault();
+
     // ensure user and message fields are filled out
     if (user.value === "" && message.value === "") {
     alert("Please fill out user and message fields before sending");
@@ -46,7 +48,6 @@ send.addEventListener('click', () => {
     alert("Please fill out message field before sending");
     } else {
     alert(`Message successfully sent to: ${user.value}`);
-    user.value = '';
     message.value = '';
     }
 });
