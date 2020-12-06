@@ -260,7 +260,14 @@
             <h3>Message User</h3>
 
             <form class="widget-container">
-                <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                <input type="text" placeholder="Search for user" class="form-field" id="userField" list="users">
+                <datalist id="users">
+                    <option value="Dale Byrd">
+                    <option value="Dan Oliver">
+                    <option value="Dawn Wood">
+                    <option value="Tashan Duncan">
+                    <option value="Victoria Chambers">
+                </datalist>
                 <textarea placeholder="Message for user" class="form-area"id= "messageField"></textarea>
                 <button class="button-primary" id="send">Send</button>
             </form>
