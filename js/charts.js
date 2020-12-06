@@ -60,7 +60,7 @@ scales: {
     legend : {
     display: false
     }
-}
+};
 
 let dailyChart = new Chart(dailyCanvas, {
     type: 'bar',
@@ -90,7 +90,7 @@ const mobileOptions = {
         fontStyle: 'bold'
         }
     }
-}
+};
 
 let mobileChart = new Chart(mobileCanvas, {
     type: 'doughnut',
@@ -126,7 +126,7 @@ function hourlyUpdate () {
         "21:00",
         "22:00",
         "23:00"
-    ]
+    ];
 
     trafficData.datasets[0] = {
         data: [
@@ -157,8 +157,8 @@ function hourlyUpdate () {
         ],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderWidth: 1,
-    }
-    trafficChart.update()
+    };
+    trafficChart.update();
 }
 
 function dailyUpdate () {
@@ -166,31 +166,31 @@ function dailyUpdate () {
     trafficData.datasets[0] = {data: [75, 115, 175, 125, 225, 200, 100],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderWidth: 1,
-    }
+    };
 
-    trafficChart.update()
+    trafficChart.update();
 }
 
 function weeklyUpdate () {
     trafficData.labels = ["Wk1", "Wk2", "Wk3", "Wk4", "Wk5", "Wk6", "Wk7",
-    "Wk8", "Wk9", "WK10", "WK11"]
+    "Wk8", "Wk9", "WK10", "WK11"];
     trafficData.datasets[0] = {data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
         2500],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderWidth: 1,
-    }
+    };
 
-    trafficChart.update()
+    trafficChart.update();
 }
 
 function monthlyUpdate () {
     trafficData.labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
-    "Aug", "Sep", "Oct", "Nov", "Dec"]
+    "Aug", "Sep", "Oct", "Nov", "Dec"];
     trafficData.datasets[0] = {data: [750*4, 1250*4, 1000*4, 2000*4, 1500*4, 1750*4, 1250*4, 1850*4, 2250*4, 1500*4,
         2500*4, 1690*4],
         backgroundColor: 'rgba(116, 119, 191, .3)',
         borderWidth: 1,
-    }
+    };
 
-    trafficChart.update()
+    trafficChart.update();
 }

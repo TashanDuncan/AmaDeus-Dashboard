@@ -9,7 +9,7 @@ const email = document.getElementById('email-notifications');
 const profileSetting = document.getElementById('public');
 const timezone = document.getElementById('timezone');
 const save = document.getElementById('save');
-const cancel = document.getElementById('cancel')
+const cancel = document.getElementById('cancel');
 
 
 // create the html for the banner
@@ -22,8 +22,8 @@ to complete</p>
 `;
 
 const tasks = document.getElementById("tasks");
-const closeTasks = document.getElementById("close-tasks")
-tasks.style.display = "none"
+const closeTasks = document.getElementById("close-tasks");
+tasks.style.display = "none";
 
 alertBanner.addEventListener('click', e => {
     const element = e.target;
@@ -31,16 +31,16 @@ alertBanner.addEventListener('click', e => {
     if (element.classList.contains("alert-banner-close")) {
     alertBanner.style.display = "none";
     }  else if (tasks.style.display === "none") {
-        tasks.style.display = ""
+        tasks.style.display = "";
     }
 });
 
 closeTasks.addEventListener('click', e => {
     const element = e.target;
-    const parent = e.target.parentElement;
+    const parent = element.parentElement;
 
     parent.style.display = "none";
-})
+});
 
 send.addEventListener('click', (e) => {
     e.preventDefault();
@@ -71,7 +71,7 @@ frequency[i].addEventListener("click", (e) => {
             frequency[i].classList.remove('active');
         }
     }   
-})
+});
 }
 
 //Local Storage
@@ -81,7 +81,7 @@ function localSave() {
     storageSettings.push(profileSetting.checked);
     storageSettings.push(timezone.value);
     localStorage.setItem('settings', JSON.stringify(storageSettings));
-    alert('Settings Saved')
+    alert('Settings Saved');
 }
 
 function localLoad() {
@@ -93,20 +93,20 @@ function localLoad() {
 
 function localRemove() {
     location.reload();
-    localStorage.clear()
+    localStorage.clear();
 }
 
 
 save.addEventListener('click', (e) => {
-    e.preventDefault;
+    e.preventDefault();
     localSave();
-})
+});
 
 cancel.addEventListener('click', (e) => {
-    e.preventDefault;
+    e.preventDefault();
     localRemove();
-})
+});
 
 window.addEventListener('load', () => {
     localLoad();
-})
+});
