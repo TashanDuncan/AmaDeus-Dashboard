@@ -364,7 +364,7 @@ template {
 }
 
 section {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .show {
@@ -595,6 +595,12 @@ header .notification-bell, header img, header h3 {
 .traffic-header .traffic-nav li {
   margin-right: 20px;
   padding: 5px;
+}
+
+canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ============================================= */
