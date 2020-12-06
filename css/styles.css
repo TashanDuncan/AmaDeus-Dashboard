@@ -883,6 +883,10 @@ input:checked + .slider:before {
   .alert-tasks {
     top: 200px;
   }
+
+  section {
+    padding: 0 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
