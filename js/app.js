@@ -1,9 +1,15 @@
+//Variable Declarations
 const alertBanner = document.getElementById("alert");
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 const frequency = document.getElementsByClassName("traffic-nav-link");
-
+const storageSettings = [];
+const email = document.getElementById('email-notifications');
+const profileSetting = document.getElementById('public');
+const timezone = document.getElementById('timezone');
+const save = document.getElementById('save');
+const cancel = document.getElementById('cancel')
 
 
 // create the html for the banner
@@ -67,3 +73,40 @@ frequency[i].addEventListener("click", (e) => {
     }   
 })
 }
+
+//Local Storage
+
+function localSave() {
+    storageSettings.push(email.checked);
+    storageSettings.push(profileSetting.checked);
+    storageSettings.push(timezone.value);
+    localStorage.setItem('settings', JSON.stringify(storageSettings));
+    alert('Settings Saved')
+}
+
+function localLoad() {
+    let checked = JSON.parse(localStorage.getItem('settings'));
+    email.checked = checked[0];
+    profileSetting.checked = checked[1];
+    timezone.value = checked[2];
+}
+
+function localRemove() {
+    location.reload();
+    localStorage.clear()
+}
+
+
+save.addEventListener('click', (e) => {
+    e.preventDefault;
+    localSave();
+})
+
+cancel.addEventListener('click', (e) => {
+    e.preventDefault;
+    localRemove();
+})
+
+window.addEventListener('load', () => {
+    localLoad();
+})
