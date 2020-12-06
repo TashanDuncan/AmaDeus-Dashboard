@@ -371,6 +371,13 @@ section {
   display: block;
 }
 
+.active {
+  background-color: #81C98F;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
@@ -583,9 +590,11 @@ header .notification-bell, header img, header h3 {
 .traffic-header .traffic-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .traffic-header .traffic-nav li {
   margin-right: 20px;
+  padding: 5px;
 }
 
 /* ============================================= */
