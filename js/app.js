@@ -2,6 +2,7 @@ const alertBanner = document.getElementById("alert");
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
+const frequency = document.getElementsByClassName("traffic-nav-link");
 
 
 
@@ -12,7 +13,6 @@ alertBanner.innerHTML =`
 to complete</p>
 <p class="alert-banner-close">x</p>
 </div>
-
 `;
 
 const tasks = document.getElementById("tasks");
@@ -52,3 +52,18 @@ send.addEventListener('click', (e) => {
     }
 });
 
+
+// change active class for time frequency on click
+for(let i = 0; i < frequency.length; i++){
+frequency[i].addEventListener("click", (e) => {
+    const element = e.target;
+
+    for(let i = 0; i < frequency.length; i++){
+        if(frequency[i] === element){
+            element.classList.add('active');
+        } else if(frequency[i] !== element){
+            frequency[i].classList.remove('active');
+        }
+    }   
+})
+}
