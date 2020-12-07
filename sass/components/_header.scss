@@ -57,21 +57,10 @@ header {
 
 .main-header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: $secondary-color;
     justify-content: space-between;
-    
-    .headline{
-        background-color: $white;
-        padding: 20px;
-        margin: 0;
-        border-right: $default-color 1px solid
-    }
-    
-    &-search{
-       margin-right: 20px;
-       height: 100%;
-    }
 }
 
 .alert {

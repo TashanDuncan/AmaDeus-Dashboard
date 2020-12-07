@@ -106,4 +106,25 @@
   section{
     padding: 0 30px;
   }
+
+  .main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $secondary-color;
+    justify-content: space-between;
+   
+    .headline{
+        background-color: $white;
+        padding: 20px;
+        margin: 0;
+        
+    }
+    
+    &-search{
+       margin-right: 20px;
+       height: 100%;
+    }
+  }
 }
+

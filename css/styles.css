@@ -519,19 +519,10 @@ header .notification-bell, header img, header h3 {
 
 .main-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #FBFBFB;
   justify-content: space-between;
-}
-.main-header .headline {
-  background-color: #FFF;
-  padding: 20px;
-  margin: 0;
-  border-right: #a0a0a0 1px solid;
-}
-.main-header-search {
-  margin-right: 20px;
-  height: 100%;
 }
 
 .alert {
@@ -582,7 +573,7 @@ header .notification-bell, header img, header h3 {
 .traffic-header {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 0 0px;
 }
 .traffic-header .traffic-nav {
   display: flex;
@@ -592,12 +583,6 @@ header .notification-bell, header img, header h3 {
 .traffic-header .traffic-nav li {
   margin-right: 20px;
   padding: 5px;
-}
-
-canvas {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ============================================= */
@@ -894,6 +879,23 @@ input:checked + .slider:before {
 
   section {
     padding: 0 30px;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FBFBFB;
+    justify-content: space-between;
+  }
+  .main-header .headline {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 0;
+  }
+  .main-header-search {
+    margin-right: 20px;
+    height: 100%;
   }
 }
 

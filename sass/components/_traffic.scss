@@ -5,7 +5,7 @@
  .traffic-header{
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0 0px;
     .traffic-nav{
         display: flex;
         justify-content: space-around;
@@ -19,6 +19,6 @@
  }
 
 canvas {
-    @include center
+
 }
 
