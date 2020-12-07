@@ -4,6 +4,52 @@
 /* ============================================= */
 /* Utilities Imports */
 /* ============================================= */
+@keyframes ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  30% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  70% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  80% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  90% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+}
 /* ============================================= */
 /* Base Imports */
 /* ============================================= */
@@ -502,11 +548,11 @@ header .notification-bell svg {
   padding-right: 20px;
   padding-left: 20px;
   fill: #FFF;
-  transition: fill ease-in 0.3s;
+  transition: transform ease-in 0.1s;
   cursor: pointer;
 }
 header .notification-bell svg:hover {
-  fill: #a0a0a0;
+  animation: ring 5s linear infinite;
 }
 header .notification-bell svg circle {
   fill: #81C98F;

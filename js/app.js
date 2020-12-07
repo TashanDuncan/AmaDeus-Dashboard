@@ -30,8 +30,6 @@ alertBanner.addEventListener('click', e => {
     
     if (element.classList.contains("alert-banner-close")) {
     alertBanner.style.display = "none";
-    }  else if (tasks.style.display === "none") {
-        tasks.style.display = "";
     }
 });
 
