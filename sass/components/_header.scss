@@ -38,7 +38,7 @@ header {
         padding-left: 20px;
         fill: $white;
         cursor: pointer;
-    
+        transition: fill .5s ease-in;
 
 
         circle{
@@ -62,7 +62,7 @@ header {
      .notification-bell, img, h3{
         display: inline-block;
     }
-    
+
     a{
         color: inherit;
     }

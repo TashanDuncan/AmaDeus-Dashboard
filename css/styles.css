@@ -556,6 +556,7 @@ header .notification-bell svg {
   padding-left: 20px;
   fill: #FFF;
   cursor: pointer;
+  transition: fill 0.5s ease-in;
 }
 header .notification-bell svg circle {
   fill: #81C98F;
