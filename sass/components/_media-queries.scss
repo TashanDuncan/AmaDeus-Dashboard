@@ -30,7 +30,9 @@
     }
 
     &-container-half {
-      width: 45vw;
+      width: 40vw;
+      padding-bottom: 20px;
+      @include center
     }
   }
 
