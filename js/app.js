@@ -23,9 +23,9 @@ to complete</p>
 </div>
 `;
 
-const tasks = document.getElementById("tasks");
-const closeTasks = document.getElementById("close-tasks");
-tasks.style.display = "none";
+const notifications = document.getElementById("notifications");
+const closeNotifications = document.getElementById("close-notifications");
+notifications.style.display = "none";
 
 
 notificationBell.addEventListener('click', e => {
@@ -34,7 +34,7 @@ notificationBell.addEventListener('click', e => {
     notificationCircle.style.display = 'none';
     element.style.fill = '#a0a0a0'
     element.classList.remove('ring')
-    tasks.style.display = "";
+    notifications.style.display = "";
 
 })
 
@@ -46,11 +46,10 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
-closeTasks.addEventListener('click', e => {
+closeNotifications.addEventListener('click', e => {
     const element = e.target;
-    const parent = element.parentElement;
-
-    parent.style.display = "none";
+    const parentofParent = element.parentElement.parentElement;
+    parentofParent.style.display = "none";
 });
 
 send.addEventListener('click', (e) => {
