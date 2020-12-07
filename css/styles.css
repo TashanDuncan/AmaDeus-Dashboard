@@ -497,7 +497,6 @@ header .logo {
 header .user, header .name {
   display: inline-block;
   margin-left: auto;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -516,6 +515,9 @@ header .name {
   padding-left: 20px;
   border-left: 1px solid black;
   height: 50px;
+}
+header .name-header {
+  display: none;
 }
 header .notification-bell, header img, header h3 {
   display: inline-block;
@@ -870,6 +872,10 @@ input:checked + .slider:before {
 
   .social-container {
     margin: 30px;
+  }
+
+  .name-header {
+    display: inline-block !important;
   }
 
   .settings {

@@ -64,9 +64,10 @@
     
     }
  }
- .members{
-
-
+ .name{
+    &-header{
+    display: inline-block !important;
+  }
 
   }
   .settings{
