@@ -43,6 +43,10 @@ header {
         &:hover{
           fill: $default-color;
         }
+
+        circle{
+            fill: $green;
+        }
     }
 
     .name{

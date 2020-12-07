@@ -508,6 +508,9 @@ header .notification-bell svg {
 header .notification-bell svg:hover {
   fill: #a0a0a0;
 }
+header .notification-bell svg circle {
+  fill: #81C98F;
+}
 header .name {
   padding-left: 20px;
   border-left: 1px solid black;
