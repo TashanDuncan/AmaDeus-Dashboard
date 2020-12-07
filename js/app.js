@@ -10,6 +10,8 @@ const profileSetting = document.getElementById('public');
 const timezone = document.getElementById('timezone');
 const save = document.getElementById('save');
 const cancel = document.getElementById('cancel');
+const notificationBell = document.getElementById('bell')
+const notificationCircle = document.getElementById('circle');
 
 
 // create the html for the banner
@@ -24,6 +26,16 @@ to complete</p>
 const tasks = document.getElementById("tasks");
 const closeTasks = document.getElementById("close-tasks");
 tasks.style.display = "none";
+
+
+notificationBell.addEventListener('click', e => {
+    const element = e.target;
+
+    notificationCircle.style.display = 'none';
+    element.style.fill = '#a0a0a0'
+    element.classList.remove('ring')
+
+})
 
 alertBanner.addEventListener('click', e => {
     const element = e.target;

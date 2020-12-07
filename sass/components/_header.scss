@@ -37,19 +37,19 @@ header {
         padding-right: 20px;
         padding-left: 20px;
         fill: $white;
-        transition: transform ease-in .1s;
-        
         cursor: pointer;
     
-        &:hover{
-            animation:ring 5s linear infinite;
-        }
+
 
         circle{
             fill: $green;
         }
     }
 
+    .ring:hover{
+        animation:ring 5s ease-in-out infinite;
+    }
+    
     .name{
         padding-left: 20px;
         border-left: 1px solid black;

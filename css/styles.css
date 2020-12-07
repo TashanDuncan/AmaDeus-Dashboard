@@ -46,10 +46,17 @@
     transform: rotate(20deg);
   }
   100% {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
+.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 /* ============================================= */
 /* Base Imports */
 /* ============================================= */
@@ -548,14 +555,13 @@ header .notification-bell svg {
   padding-right: 20px;
   padding-left: 20px;
   fill: #FFF;
-  transition: transform ease-in 0.1s;
   cursor: pointer;
-}
-header .notification-bell svg:hover {
-  animation: ring 5s linear infinite;
 }
 header .notification-bell svg circle {
   fill: #81C98F;
+}
+header .ring:hover {
+  animation: ring 5s ease-in-out infinite;
 }
 header .name {
   padding-left: 20px;
