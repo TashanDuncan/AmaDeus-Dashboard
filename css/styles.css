@@ -608,26 +608,39 @@ header .notification-bell, header img, header h3 {
   font-weight: bolder;
   padding: 10px;
 }
-.alert-tasks {
+.alert-notifications {
   position: absolute;
-  background-color: #FBFBFB;
+  background-color: #FFF;
+  color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  right: 50px;
 }
-.alert-tasks-close {
+.alert-notifications :last-child {
+  border-bottom: none;
+}
+.alert-notifications-close span {
   padding: 5px 20px;
-  color: red;
-  text-align: right;
+  color: #FFF;
+  background-color: red;
+  margin-left: auto;
   font-weight: bolder;
 }
-.alert-tasks a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.alert-notifications-color {
+  border-bottom: 1px #a0a0a0 solid;
 }
-.alert-tasks a :hover {
-  background-color: #a0a0a0;
+.alert-notifications-color :hover {
+  background-color: #FBFBFB;
+}
+.alert-notifications-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.alert-notifications-container div {
+  flex-grow: 1;
+  margin-left: 5px;
 }
 
 /* ============================================= */
@@ -953,7 +966,7 @@ input:checked + .slider:before {
     margin: 0 30px;
   }
   .alert-tasks {
-    top: 200px;
+    top: 80px;
   }
 
   section {
