@@ -592,7 +592,6 @@ header .notification-bell, header img, header h3 {
   color: #FFF;
   margin: 10px;
   border-radius: 5px;
-  cursor: pointer;
 }
 .alert p {
   margin: 0;
@@ -607,6 +606,7 @@ header .notification-bell, header img, header h3 {
   font-size: larger;
   font-weight: bolder;
   padding: 10px;
+  cursor: pointer;
 }
 .alert-notifications {
   position: absolute;
