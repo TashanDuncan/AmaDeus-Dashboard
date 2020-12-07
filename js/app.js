@@ -33,7 +33,7 @@ notificationBell.addEventListener('click', e => {
 
     notificationCircle.style.display = 'none';
     element.style.fill = '#a0a0a0'
-    element.classList.remove('ring')
+    notificationBell.classList.remove('ring')
     notifications.style.display = "";
 
 })
