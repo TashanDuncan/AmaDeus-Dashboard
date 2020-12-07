@@ -358,9 +358,6 @@ template {
 
 .widget-container-full, .widget-container-half {
   width: 95vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 section {
@@ -672,6 +669,21 @@ canvas {
   padding: 10px 0;
   margin-left: 10px;
 }
+.members-text a, .activity-text a {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 .members-date, .activity-date {
   text-align: center;
   padding: 10px 0;
@@ -859,10 +871,6 @@ input:checked + .slider:before {
 
   .social-container {
     margin: 30px;
-  }
-
-  .members-all {
-    width: 95%;
   }
 
   .settings {
