@@ -4,8 +4,9 @@
 
  .traffic-header{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 0 0px;
+    text-align: center;
     .traffic-nav{
         display: flex;
         justify-content: space-around;

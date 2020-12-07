@@ -375,6 +375,10 @@ section {
   border-radius: 5px;
 }
 
+h3 {
+  text-align: center;
+}
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
@@ -523,6 +527,10 @@ header .notification-bell, header img, header h3 {
   align-items: center;
   background-color: #FBFBFB;
   justify-content: space-between;
+  padding: 20px 0;
+}
+.main-header .headline {
+  margin-top: 0;
 }
 
 .alert {
@@ -572,8 +580,9 @@ header .notification-bell, header img, header h3 {
 /* ============================================= */
 .traffic-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 0 0px;
+  text-align: center;
 }
 .traffic-header .traffic-nav {
   display: flex;
@@ -828,6 +837,9 @@ input:checked + .slider:before {
 
   .widget-container-full {
     width: 90vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .widget-container-half {
     width: 45vw;
@@ -846,6 +858,8 @@ input:checked + .slider:before {
 
   .traffic-header {
     margin: 0 20px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .daily, .mobile {
@@ -887,6 +901,7 @@ input:checked + .slider:before {
     align-items: center;
     background-color: #FBFBFB;
     justify-content: space-between;
+    padding: 0;
   }
   .main-header .headline {
     background-color: #FFF;
@@ -896,6 +911,10 @@ input:checked + .slider:before {
   .main-header-search {
     margin-right: 20px;
     height: 100%;
+  }
+
+  h3 {
+    text-align: left;
   }
 }
 
