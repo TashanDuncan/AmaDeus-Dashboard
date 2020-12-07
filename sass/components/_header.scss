@@ -38,6 +38,7 @@ header {
         padding-left: 20px;
         fill: $white;
         transition: fill ease-in .3s;
+        cursor: pointer;
     
         &:hover{
           fill: $default-color;
@@ -76,6 +77,7 @@ header {
     color: $white;
     margin: 10px;
     border-radius: 5px;
+    cursor: pointer;
 
     p{
         margin: 0;

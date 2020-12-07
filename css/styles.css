@@ -503,6 +503,7 @@ header .notification-bell svg {
   padding-left: 20px;
   fill: #FFF;
   transition: fill ease-in 0.3s;
+  cursor: pointer;
 }
 header .notification-bell svg:hover {
   fill: #a0a0a0;
@@ -536,6 +537,7 @@ header .notification-bell, header img, header h3 {
   color: #FFF;
   margin: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .alert p {
   margin: 0;
@@ -590,6 +592,7 @@ header .notification-bell, header img, header h3 {
 .traffic-header .traffic-nav li {
   margin-right: 20px;
   padding: 5px;
+  cursor: pointer;
 }
 
 /* ============================================= */
@@ -732,6 +735,7 @@ header .notification-bell, header img, header h3 {
   border: none;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 .button-disabled {
   background-color: #a0a0a0;
