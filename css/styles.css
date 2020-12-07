@@ -574,6 +574,9 @@ header .name-header {
 header .notification-bell, header img, header h3 {
   display: inline-block;
 }
+header a {
+  color: inherit;
+}
 
 .main-header {
   display: flex;
