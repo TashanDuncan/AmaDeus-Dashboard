@@ -994,7 +994,6 @@ input:checked + .slider:before {
   }
   .main-header-search {
     margin-right: 20px;
-    height: 100%;
   }
 
   h3 {
