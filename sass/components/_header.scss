@@ -120,12 +120,14 @@ header {
         }
     
         &-close{
+           
             span{
             padding: 5px 20px;
             color: $white;
             background-color: red;
             margin-left: auto;
             font-weight: bolder;
+            cursor: pointer;
             }
             
         }
@@ -142,6 +144,7 @@ header {
             display: flex;
             justify-content: space-between;
             padding: 20px 10px;
+            cursor: pointer;
             
 
             div{

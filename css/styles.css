@@ -630,6 +630,7 @@ header a {
   background-color: red;
   margin-left: auto;
   font-weight: bolder;
+  cursor: pointer;
 }
 .alert-notifications-color {
   border-bottom: 1px #a0a0a0 solid;
@@ -641,6 +642,7 @@ header a {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px;
+  cursor: pointer;
 }
 .alert-notifications-container div {
   flex-grow: 1;
